@@ -28,7 +28,7 @@ Archiving backups | Backups that have been created and saved by previous users c
 Upload Load balancer | Load balancer used to control traffic on the two application servers. This fulfills CON-4. |
 
 ## Step 6: Sketch Views and Record Design Decisions
-# Image 
+![image](https://user-images.githubusercontent.com/80362352/209515135-f92041da-99e8-4cfc-b78b-f92db91cbc13.png) 
 
 Element | Responsibility
 |:---|:---|
@@ -37,7 +37,7 @@ LoadBalancer | Dispatches (and balances the load of) requests coming from client
 The UML sequence diagram shown below shows how a lecturer can make a new team to
 support UC-2,which is also associated with QA-2 (availability).
 
-# Image
+![image](https://user-images.githubusercontent.com/80362352/209515175-297aa50f-0279-456e-91b4-7524a389aab7.png)
 
 ## Step 7: Perform Analysis of Current Design and Review Iteration Goal And Achievement of Design Purpose
 Not Addressed | Partially Addressed | Completely Addressed | Design Decision Made During the Iteration|
