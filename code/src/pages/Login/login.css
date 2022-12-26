@@ -1,0 +1,16 @@
+.login-form-body{
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.login-submit-button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.failed-login {
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
