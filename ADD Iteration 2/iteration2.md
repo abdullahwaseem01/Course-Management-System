@@ -49,3 +49,25 @@ Associate frameworks with a module in the data layer | The modules that are in t
 ##### UC-5
 ![image](https://user-images.githubusercontent.com/80362352/209500569-52e582bb-b0fb-4248-87b7-00b56f62d16e.png)
 
+## Step 7: Perform Analysis of Current Design and Review Iteration Goal and Achievement of Design Purpose
+Through the decisions made in this iteration, an initial understanding of how functionality is supported in the system was determined.
+|Not Addressed | Partially Addressed | Addressed | Design Decision made in this Iteration |
+|---|---|---|---|
+|   |   | UC-1  | Modules across the layers and preliminary interfaces to support this use case have been identified. |
+|   |   | UC-4  | Modules across the layers and preliminary interfaces to support this use case have been identified. |
+|   | QA-1  |   | The elements that support the associated use case (UC-1) have been identified. |
+|   | QA-2  |   | No relevant decisions made |
+|   | QA-3  |   | No relevant decisions made |
+|   | QA-4  |   | The elements that support the associated use case (UC-4) have been identified |
+|   | QA-5  |   | No relevant decisions made |
+|   | QA-6  |   | The elements that support the associated use case (UC-5) have been identified. |
+|   | CON-1  |   | No relevant decisions made |
+|   | CON-2  |   | No relevant decisions made |
+|   | CON-3  |   | No relevant decisions made |
+|   | CON-4  |   | No relevant decisions made |
+|   | CON-6  |   | No relevant decisions made |
+|   | CRN-1  |   | No relevant decisions made |
+|   | CRN-2  |   | No relevant decisions made |
+|   | CRN-3  |   | Concern is expected to be addressed well through the capable and quality use of React and Express. |
+|   | CRN-4  |   | No relevant decisions made |
+|   | CRN-5  |   | The architectural concern that all types of course information is provided was partially addressed in the third figure in iteration 2. |
