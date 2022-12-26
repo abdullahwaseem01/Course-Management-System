@@ -1,5 +1,5 @@
 # Use Cases
-## Image 
+![image](https://user-images.githubusercontent.com/80362352/209514833-d7962ece-115f-4cd1-a1a2-19fe78d0732a.png)
 
 | Use Case | Description |
 |:---|:---|
