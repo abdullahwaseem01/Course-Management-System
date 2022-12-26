@@ -32,3 +32,20 @@ Connect components associated with modules using React | Since React uses the in
 Associate frameworks with a module in the data layer | The modules that are in the data layer summarize Object Relational Mapping.
 
 ## Step 6: Sketch Views and Record Design Decisions
+#### 1. Figure shows the initial domain model for the system.
+![image](https://user-images.githubusercontent.com/80362352/209499969-6df96456-576c-442e-bc75-c2b609a36018.png)
+#### 2. Figure below shows the domain objects that are to be instantiated from the use case model
+![image](https://user-images.githubusercontent.com/80362352/209500112-7dc8bda6-be2f-4e43-a198-68c04ba19765.png)
+#### 3. Figure below shows the module view with the modules that support the primary use cases. 
+![image](https://user-images.githubusercontent.com/80362352/209500175-35a8bfe4-f5f2-4594-b6e5-04d0319d8da8.png)
+
+#### 4. The following sequence diagrams for the primary use cases: UC-1, UC-4 and UC-5 were created in the step of the method that defined interfaces.
+##### UC-1
+  ![image](https://user-images.githubusercontent.com/80362352/209500356-f989a75f-409c-45bb-b4d5-6e967b5a0dbd.png)
+
+##### UC-4
+![image](https://user-images.githubusercontent.com/80362352/209500544-5c4ee508-b042-4a4b-b234-9b2332065531.png)
+
+##### UC-5
+![image](https://user-images.githubusercontent.com/80362352/209500569-52e582bb-b0fb-4248-87b7-00b56f62d16e.png)
+
