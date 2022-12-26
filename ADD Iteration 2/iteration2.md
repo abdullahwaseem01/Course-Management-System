@@ -1,15 +1,34 @@
-# SOFE 3650 Final Project Iteration 2
-![image](https://user-images.githubusercontent.com/95147221/206030023-6d90fbdc-4bf2-411b-ba73-19a3a24d4132.png)
-![image](https://user-images.githubusercontent.com/95147221/206030069-932ad9ce-68ae-4b63-bd42-7e8bff6377bb.png)
-![image](https://user-images.githubusercontent.com/95147221/206030093-179c6bfd-10e7-461a-a190-6db8d634cd2f.png)
-![image](https://user-images.githubusercontent.com/95147221/206030134-3bed8965-8f1b-497e-9b32-342f94b465c0.png)
-![image](https://user-images.githubusercontent.com/95147221/206030159-6f3a3087-149e-47b2-ab7f-3a0f4f24abfc.png)
-![image](https://user-images.githubusercontent.com/95147221/206030410-c3c482da-408a-481d-bf7b-8d7da492b609.png)
-![image](https://user-images.githubusercontent.com/95147221/206030436-40330066-8b13-44f4-be64-4f34a97f8685.png)
-![image](https://user-images.githubusercontent.com/95147221/206030456-24fc0300-7c93-4a71-930b-2d0e9f82f946.png)
-![image](https://user-images.githubusercontent.com/95147221/206030914-17fae4a2-9b0e-433a-bd38-e5d76df08cc2.png)
-![image](https://user-images.githubusercontent.com/95147221/206030940-455209b4-516b-4ed5-b1f5-3f257ce20def.png)
-![image](https://user-images.githubusercontent.com/95147221/206050749-aff77cdd-8bc2-4024-ac52-81495f3e2571.png)
-![image](https://user-images.githubusercontent.com/95147221/206030983-d0f77a27-e752-4b52-b414-1cc287318c1c.png)
-![image](https://user-images.githubusercontent.com/95147221/206031086-26765c85-71ca-4fc2-802d-e94fbd958fbf.png)
+# Iteration 2: Identifying Structures to Support Primary Functionality
 
+## Step 1: Review the Iteration Goal
+The focus of this section is to present the results of the activities that are performed in each of the steps of the ADD in the second iteration of the design process for the CMS system. There were generic descriptions of the functionalities described in iteration 1. The goal was to establish an overall system structure. Iteration 2 provides detailed descriptions and decisions that result in the formation of development teams; its goal is to reason about the units of implementation that affect formation, interfaces and also the manner in which development tasks are distributed, outsourced and implemented in sprints.
+
+We need to design in a systematic way, by showing discipline about the decisions we make as we cannot design everything from the start. We initially focus on the biggest risks and then focus on finer details.
+
+## Step 2: Establish Iteration Goal by Selecting Drivers
+The goal of iteration 2 is to address the general architectural concern of identifying structures to support primary functionality. In this second iteration, the architect considers the system’s primary use cases:
+* UC-1
+* UC-4
+* UC-5
+
+## Step 3: Choose One or More Elements of the System to Refine
+The elements that are to be refined in iteration 2 are the ones that were located in the different layers defined by the three-tier reference architectures in iteration 1. The collaboration of the components that associate with the modules located in different layers is required for the support of functionality in the system.
+
+## Step 4: Choose One or More Design Concepts that Satisfy the Selected Drivers
+The following table summarizes the design decisions.
+Design Decisions and Location  | Rationale and Assumptions
+---|--- |
+Create a Domain Model for the application | An initial domain model is necessary for the system, which identifies major entities and their relationships. |
+Identify Domain Objects that map to functional requirements | A domain object, where each distinct functional element of the application needs to be encapsulated in a self containing building block. |
+Decompose Domain Objects into general and specialized components | React is a widely used client side JavaScript framework. Express is a server side JavaScript framework. React and Express integrate well with each other. There are no alternatives considered for the application development. React and express were selected because they are easy to implement and the development team is familiar with it, resulting in greater and earlier productivity.
+
+## Step 5: Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
+Design Decisions and Location  | Rationale and Assumptions
+---|--- |
+Create only an initial domain model | To accelerate this phase of design, only an initial domain model is created. |
+Map the system use cases to domain objects | By analyzing the system’s use cases, an initial identification of domain objects can be made. For all of the use cases in the use case description, domain objects are identified. |
+Decompose the domain objects across the layers to identify layer-specific modules with an explicit interface. | This will ensure that the modules that support all of the functionalities are identified. Since the architect will perform this task for just the primary use cases, another team member is required to identify the rest of the modules. The architect discovers the necessity to test the modules, except the ones that implement UI functionalities therefore a new architectural concern is identified: CRN-6: There is a test required on most of the modules. |
+Connect components associated with modules using React | Since React uses the inversion of control approach, different aspects are supported and the modules are unit-tested. |
+Associate frameworks with a module in the data layer | The modules that are in the data layer summarize Object Relational Mapping.
+
+## Step 6: Sketch Views and Record Design Decisions
